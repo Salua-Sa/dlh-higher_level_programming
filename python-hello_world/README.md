@@ -1,4 +1,4 @@
-This directory contains 8 tasks for Python scripts:
+This directory contains 8 tasks for Python - Hello, Word scripts:
 
 2-print.py prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
