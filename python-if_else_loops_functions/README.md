@@ -1,4 +1,4 @@
-This directory contains 13 tasks for Python- if/else, loops, functions scripts:
+This directory contains 15 tasks for Python- if/else, loops, functions scripts:
 
 0-positive_or_negative.py completes the source code in order to print whether the number stored in the variable number is positive or negative. 
 
