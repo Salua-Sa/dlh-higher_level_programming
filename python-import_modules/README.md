@@ -1,4 +1,4 @@
-This directory contains 6 tasks for Python- import & modules scripts:
+This directory contains 10 tasks for Python- import & modules scripts:
 
 0-add.py imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
 
