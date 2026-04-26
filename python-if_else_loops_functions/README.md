@@ -1,6 +1,6 @@
 This directory contains 13 tasks for Python- if/else, loops, functions scripts:
 
-0-positive_or_negative.py completes the source code in order to print a random number stored in the variable number is positive or negative. 
+0-positive_or_negative.py completes the source code in order to print whether the number stored in the variable number is positive or negative. 
 
 1-last_digit.py completes the source code in order to print the last digit of the number stored in the variable number. 
 
