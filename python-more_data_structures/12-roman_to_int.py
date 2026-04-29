@@ -1,39 +1,16 @@
 #!/usr/bin/python3
 
 def roman_to_int(roman_string):
-    int_num = 0
+    values = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    total_value = 0
     if roman_string == None:
         return int_num
     else:
-        for i in roman_string:
-            if i >= i+1:
-                if i == "I":
-                    int_num += 1
-                elif i == "V":
-                    int_num += 5
-                elif i == "X":
-                    int_num += 10
-                elif i == "L":
-                    int_num += 50
-                elif i == "C":
-                    int_num += 100
-                elif i == "D":
-                    int_num += 500
-                elif i == "D":
-                    int_num += 1000
+    for i in range(len(roman_string)):
+        if i +1 <len(roman_string):
+            next_value = values[roman_string[i + 1]]
+            if current_value > next_value:
+                total_value += current_value
             else:
-                if i == "I":
-                    int_num -= 1
-                elif i == "V":
-                    int_num -= 5
-                elif i == "X":
-                    int_num -= 10
-                elif i == "L":
-                    int_num -= 50
-                elif i == "C":
-                    int_num -= 100
-                elif i == "D":
-                    int_num -= 500
-                elif i == "D":
-                    int_num -= 1000
-    return int_num
+                total_value -= current_value
+    return total_value
