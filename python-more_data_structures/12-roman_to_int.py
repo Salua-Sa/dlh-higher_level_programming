@@ -6,13 +6,13 @@ def roman_to_int(roman_string):
 
     if roman_string == None:
         return 0
-    else:
+
     for i in range(len(roman_string)):
         current_value = values[roman_string[i]]
         if i +1 <len(roman_string):
             next_value = values[roman_string[i + 1]]
-            if current_value > next_value:
-                total_value += current_value
-            else:
+            if current_value < next_value:
                 total_value -= current_value
+            else:
+                total_value += current_value
     return total_value
