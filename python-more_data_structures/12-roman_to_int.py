@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     values = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     total_value = 0
 
-    if roman_string == None:
+    if not isinstance(roman_string, str) or roman_string == None:
         return 0
 
     for i in range(len(roman_string)):
@@ -17,4 +17,5 @@ def roman_to_int(roman_string):
                 total_value += current_value
         else:
             total_value += current_value
-    return total_value
+
+     return total_value
