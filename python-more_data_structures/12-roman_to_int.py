@@ -5,9 +5,10 @@ def roman_to_int(roman_string):
     total_value = 0
 
     if roman_string == None:
-        return total_value
+        return 0
     else:
     for i in range(len(roman_string)):
+        current_value = values[roman_string[i]]
         if i +1 <len(roman_string):
             next_value = values[roman_string[i + 1]]
             if current_value > next_value:
