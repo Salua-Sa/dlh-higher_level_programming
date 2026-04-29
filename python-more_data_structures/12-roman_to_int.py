@@ -6,18 +6,22 @@ def roman_to_int(roman_string):
         return int_num
     else:
         for i in roman_string:
-            if i == "I":
-                int_num += 1
-            elif i == "V":
-                int_num += 5
-            elif i == "X":
-                int_num += 10
-            elif i == "L":
-                int_num += 50
-            elif i == "C":
-                int_num += 100
-            elif i == "D":
-                int_num += 500
-            elif i == "D":
-                int_num += 1000
+            if i >= i+1:
+                if i == "I":
+                    int_num += 1
+                elif i == "V":
+                    int_num += 5
+                elif i == "X":
+                    int_num += 10
+                elif i == "L":
+                    int_num += 50
+                elif i == "C":
+                    int_num += 100
+                elif i == "D":
+                    int_num += 500
+                elif i == "D":
+                    int_num += 1000
+            else:
+                if i == "I":
+                    int_nume -= 1
     return int_num
