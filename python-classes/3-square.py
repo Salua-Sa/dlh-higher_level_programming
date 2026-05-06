@@ -3,8 +3,7 @@
 
 
 class Square:
-    """This class defines a square with size."""   
-    
+    """This class defines a square with size."""
     def __init__(self, size=0):
         """Initializes a Square with a given size and specific conditions."""
         if type(size) is not int:
