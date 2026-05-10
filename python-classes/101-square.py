@@ -65,7 +65,5 @@ class Square:
             for i in range(self.__size):
                 result += (" " * self.__position[0] + "#" * self.__size)
                 if i != self.__size - 1:
-                     result += "\n"#
+                    result += "\n"
             return result
-
-        return result.rstrip()
