@@ -54,16 +54,15 @@ class Square:
                 print(" " * self.__position[0] + "#" * self.__size)
 
     def __str__(self):
-        """Return the result""""
+        """Return the result"""
         result = ""
-        if self__ size == 0:
+        if self.__size == 0:
             return ""
         result = ""
-        else:
-            for i in range(self.__position[1]):
+        for i in range(self.__position[1]):
+            result += "\n"
+        for i in range(self.__size):
+            result += (" " * self.__position[0] + "#" * self.__size)
+            if i != self.__size - 1:
                 result += "\n"
-            for i in range(self.__size):
-                result += (" " * self.__position[0] + "#" * self.__size)
-                if i != self.__size - 1:
-                    result += "\n"
-            return result
+        return result
