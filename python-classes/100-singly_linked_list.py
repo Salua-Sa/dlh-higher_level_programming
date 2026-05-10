@@ -24,7 +24,7 @@ class Node:
     @property
     def next_node(self):
         """Retrieves the next_node of the node"""
-        return selt.__next_node
+        return seft.__next_node
 
     @next_node.setter
     def next_node(self, value):
@@ -45,7 +45,7 @@ class SinglyLinkedList:
         current = self.__head
         result = ""
         while current is not None:
-            result += str(curennt.data) + "\n"
+            result += str(current.data) + "\n"
             current = current.next_node
         return result.rstrip()
 
