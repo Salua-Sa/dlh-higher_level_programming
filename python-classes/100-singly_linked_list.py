@@ -3,6 +3,7 @@
 
 
 class Node:
+    """ class Node that defines a node of a singly linked list"""
     def __init__(self, data, next_node=None):
         """Initializes a Node with a given data and next_node"""
         self.data = data
@@ -57,11 +58,9 @@ class SinglyLinkedList:
             new_node.next_node = self.__head
             self.__head = new_node
             return
-
         current = self.__head
         while (current.next_node is not None
                and value >= current.next_node.data):
             current = current.next_node
-
         new_node.next_node = current.next_node
         current.next_node = new_node
