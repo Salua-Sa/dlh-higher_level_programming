@@ -5,9 +5,11 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """Insert a new string after a specific string"""
-    with open(filename, "w") as f:
+    with open(filename, "r") as f:
         result = ""
         for i in f:
             result += i
             if search_string in i:
                 result += new_string
+    with open(filename, "w") as f:
+        f.write(result)
