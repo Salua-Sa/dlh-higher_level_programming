@@ -11,7 +11,7 @@ class Node:
     @property
     def data(self):
         """Retrieves the data of the node"""
-        return selt.__data
+        return self.__data
 
     @data.setter
     def data(self, value):
