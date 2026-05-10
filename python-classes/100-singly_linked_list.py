@@ -24,7 +24,7 @@ class Node:
     @property
     def next_node(self):
         """Retrieves the next_node of the node"""
-        return seft.__next_node
+        return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
