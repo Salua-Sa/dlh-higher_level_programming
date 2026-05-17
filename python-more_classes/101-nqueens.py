@@ -9,6 +9,7 @@ def is_safe(board, row, col, n):
     for i in range(row):
         if board[i][col] == 1:
             return False
+    """Check diagonal upper-left"""
     i = row - 1
     j = col - 1
     while i >= 0 and j >= 0:
@@ -16,6 +17,7 @@ def is_safe(board, row, col, n):
             return False
         i -= 1
         j -= 1
+    """Check diagonal upper-right"""
     i = row - 1
     j = col + 1
     while i >= 0 and j < n:
