@@ -29,6 +29,7 @@ def main():
                 if status_codes[code] > 0:
                     print("{}: {}".format(code, status_codes[code]))
                 print("File size: {}".format(total_size))
+    print("File size: {}".format(total_size))
     for code in sorted(status_codes):
         if status_codes[code] > 0:
             print("{}: {}".format(code, status_codes[code]))
