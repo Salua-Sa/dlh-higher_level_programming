@@ -28,12 +28,10 @@ def main():
             for code in sorted(status_codes):
                 if status_codes[code] > 0:
                     print("{}: {}".format(code, status_codes[code]))
-                print("File size: {}".format(total_size))
-        else:
-            print("File size: {}".format(total_size))
-            for code in sorted(status_codes):
-                if status_codes[code] > 0:
-                    print("{}: {}".format(code, status_codes[code]))
+    print("File size: {}".format(total_size))
+    for code in sorted(status_codes):
+        if status_codes[code] > 0:
+            print("{}: {}".format(code, status_codes[code]))
 
 
 if __name__ == "__main__":
