@@ -16,7 +16,7 @@ This repository contains Python programming projects from the Digital Learning H
 | [python-classes](./python-classes) | Classes, objects, attributes, methods, `self`, `__init__`, encapsulation, and properties |
 | [python-more_classes](./python-more_classes) | Class attributes, instance attributes, `__str__`, `__repr__`, class methods, static methods, and advanced OOP concepts |
 | [python-input_output](./python-input_output) | Opening, reading, writing files, `with`, JSON, serialization, deserialization, and command line parameters |
-| [python-serialization](./python-serialization) | Serialization, marshaling, JSON, pickle, and data persistence |
+| [python-serialization](./python-serialization) | Serialization, JSON, pickle, and data persistence |
 
 ## Main Topics
 
